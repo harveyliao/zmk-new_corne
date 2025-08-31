@@ -63,7 +63,7 @@
 
     macros {
         last_ime: last_ime {
-          compatible = "zmk, behavior-macro";
+          compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
             = <&macro_press &kp LCTRL>
