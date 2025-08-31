@@ -94,11 +94,7 @@
 &kp TILDE   &kp EXCL        &kp AT          &kp HASH      &kp DLLR      &kp PRCNT                                &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp LC(BSPC)
 &kp DEL     &bt BT_CLR_ALL  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_PREV &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
 &kp LCTRL   &out OUT_USB    &out OUT_BLE    &none         &none         &none          &trans                    &mmv MOVE_DOWN                   &kp C_NEXT &kp HOME   &kp PG_DN  &kp PG_UP &kp END   &kp C_PLAY_PAUSE
-<<<<<<< HEAD
                                             &kp LGUI      &trans        &kp SPACE                                                                 &kp ENTER  &mt 4      &trans
-=======
-                                            &kp LGUI      &trans        &kp SPACE                                                                 &kp ENTER  &mt 4      &trans            >;
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -106,32 +102,19 @@
         };
 
         raise_layer {
-<<<<<<< HEAD
             display-name = "NUMBER"; // layer 3
             bindings = <
 &kp GRAVE  &kp N1   &kp N2  &kp N3    &kp N4   &kp N5                                  &mmv MOVE_UP                     &kp N6        &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &kp DEL    &kp F1   &kp F2  &kp F3    &kp F4   &kp F5                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6        &kp MINUS        &kp EQUAL        &kp LBKT         &kp RBKT  &kp BSLH
 &kp CAPS   &kp F7   &kp F8  &kp F9    &kp F10  &kp F11  &kp C_MUTE                     &mmv MOVE_DOWN                   &kp F12       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT &none
                             &kp LALT  &none    &kp LGUI                                                                 &kp SPACE     &trans           &none
-=======
-            display-name = "NUMBER";
-            bindings = <
-&kp GRAVE  &kp N1   &kp N2  &kp N3    &kp N4   &kp N5                                  &mmv MOVE_UP                     &kp N6        &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&kp DEL    &kp F1   &kp F2  &kp F3    &kp F4   &kp F5                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6        &kp MINUS        &kp EQUAL        &kp LBKT         &kp RBKT  &kp BSLH
-&kp CAPS   &kp F7   &kp F8  &kp F9    &kp F10  &kp F11  &kp C_MUTE                     &mmv MOVE_DOWN                   &kp F12       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT &none 
-                            &kp LALT  &mt 5    &kp LGUI                                                                 &kp SPACE     &trans           &none
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
         mod_layer {
-<<<<<<< HEAD
             display-name = "FUNTION"; // layer 4
-=======
-            display-name = "FUNCTION";
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             bindings = <
 &studio_unlock  &none      &none     &none       &none     &tog 1                               &mmv MOVE_UP                     &none       &none         &none        &kp LPAR    &kp RPAR  &none
 &none          &none       &none     &none       &none     &none                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none       &kp C_VOL_DN  &kp C_VOL_UP &kp LBRC    &kp RBRC  &none
@@ -143,11 +126,7 @@
         };
 
         layer_5 {
-<<<<<<< HEAD
             display-name = "Fn5"; // layer 5
-=======
-            display-name = "Fn5";
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             bindings = <
 &none          &none      &none     &none       &none     &none                                  &mmv MOVE_UP                     &none       &none     &none     &none       &none     &none
 &none          &none      &none     &none       &none     &none                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none       &none     &none     &none       &none     &none
@@ -160,11 +139,7 @@
         };
 
         layer_6 {
-<<<<<<< HEAD
             display-name = "Fn6"; // layer 6
-=======
-            display-name = "Fn6";
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             bindings = <
 &none          &none      &none     &none       &none     &none                                  &mmv MOVE_UP                     &none       &none     &none     &none       &none     &none
 &none          &none      &none     &none       &none     &none                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none       &none     &none     &none       &none     &none
@@ -176,17 +151,12 @@
         };
 
         layer_7 {
-<<<<<<< HEAD
             display-name = "Fn7"; // layer 7
-=======
-            display-name = "Fn7";
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             bindings = <
 &none          &none      &none     &none       &none     &none                                  &mmv MOVE_UP                     &none       &none     &none     &none       &none     &none
 &none          &none      &none     &none       &none     &none                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none       &none     &none     &none       &none     &none
 &none          &none      &none     &none       &none     &none       &none                     &mmv MOVE_DOWN                    &none       &none     &none     &none       &none     &none
                                     &none       &none     &none                                                                   &none       &none     &none
-<<<<<<< HEAD
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -225,8 +195,6 @@
 &none          &none      &none     &none       &none     &none                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none       &none     &none     &none       &none     &none
 &none          &none      &none     &none       &none     &none       &none                     &mmv MOVE_DOWN                    &none       &none     &none     &none       &none     &none
                                     &none       &none     &none                                                                   &none       &none     &none
-=======
->>>>>>> 65f2844114912316244a15b07339b6a5f5deb917
             >;
 
             sensor-bindings = <&scroll_encoder>;
