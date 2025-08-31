@@ -107,7 +107,7 @@
 &kp GRAVE  &kp N1   &kp N2  &kp N3    &kp N4   &kp N5                                  &mmv MOVE_UP                     &kp N6        &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &kp DEL    &kp F1   &kp F2  &kp F3    &kp F4   &kp F5                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6        &kp MINUS        &kp EQUAL        &kp LBKT         &kp RBKT  &kp BSLH
 &kp CAPS   &kp F7   &kp F8  &kp F9    &kp F10  &kp F11  &kp C_MUTE                     &mmv MOVE_DOWN                   &kp F12       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT &none
-                            &none       &none     &none                                                                 &kp SPACE     &trans           &none
+                            &kp LALT  &none    &kp LGUI                                                                 &kp SPACE     &trans           &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
