@@ -190,12 +190,12 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
+  - '&mt 4'
   - LGUI
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&mt 4', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Fn:
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
