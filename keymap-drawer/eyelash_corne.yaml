@@ -47,7 +47,7 @@ layers:
   - SYMBOL
   - LGUI
   - $$mdi:keyboard-space$$
-  - Fn
+  - NUMBER
   - $$mdi:keyboard-esc$$
   QWERTY:
   - $$mdi:keyboard-tab$$
@@ -96,7 +96,7 @@ layers:
   - SYMBOL
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
-  - Fn
+  - NUMBER
   - $$mdi:keyboard-esc$$
   SYMBOL:
   - '~'
@@ -147,6 +147,55 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&mt 4'
   - {t: '$$mdi:transfer$$', type: trans}
+  NUMBER:
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - F6
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-caps$$
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - F12
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
+  - '&mt 5'
+  - LGUI
+  - $$mdi:keyboard-space$$
+  - {type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Fn:
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +243,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
