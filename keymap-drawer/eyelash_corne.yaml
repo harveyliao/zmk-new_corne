@@ -144,7 +144,7 @@ layers:
   - LGUI
   - {type: held}
   - $$mdi:keyboard-space$$
-  - '&last_ime'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&mt 4'
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
