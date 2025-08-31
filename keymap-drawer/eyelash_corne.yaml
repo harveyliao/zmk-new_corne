@@ -191,7 +191,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mt 4'
   - LGUI
   - $$mdi:keyboard-space$$
   - {type: held}
