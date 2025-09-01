@@ -59,6 +59,16 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <30 31>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <32 31>;
+        };
     };
 
     macros {
