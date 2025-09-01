@@ -127,7 +127,7 @@ layers:
   - '{'
   - '}'
   - '|'
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:alpha-w-box$$
   - OUT USB
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
