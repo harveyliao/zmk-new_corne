@@ -36,6 +36,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        td_lower_fn: td_lower_fn {
+          compatible = "zmk,behavior-tap-dance";
+          display-name = "lower/fn &mo Tap Dance"
+          #binding-cells = <0>;
+          bindings = <&mo 2>, <&mo 4>;
+        };
+
+        td_raise_fn: td_raise_fn {
+          compatible = "zmk,behavior-tap-dance";
+          display-name = "raise/fn &mo Tap Dance"
+          #binding-cells = <0>;
+          bindings = <&mo 3>, <&mo 4>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -98,7 +112,7 @@
 &kp TAB        &kp Q  &kp W  &kp F     &kp P  &kp G                            &kp UP                &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
 &mt LCTRL ESC  &kp A  &kp R  &kp S     &kp T  &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp N  &kp E      &kp I    &kp O     &kp SQT
 &kp LSHIFT     &kp Z  &kp X  &kp C     &kp V  &kp B     &kp SPACE              &kp DOWN              &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ENTER
-                             &kp LALT  &mo 2  &kp LGUI                                               &kp SPACE  &mo 3  &kp ESC
+                             &kp LALT  &td_lower_fn  &kp LGUI                                               &kp SPACE  &td_raise_fn  &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -110,7 +124,7 @@
 &kp TAB     &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL   &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                          &kp LALT  &mo 2  &kp SPACE                                               &kp SPACE  &mo 3  &kp ESC
+                          &kp LALT  &td_lower_fn  &kp SPACE                                               &kp SPACE  &td_raise_fn  &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -145,7 +159,7 @@
             bindings = <
 &studio_unlock  &none           &none         &none        &none   &tog 1                                &mmv MOVE_UP                     &none  &none         &none         &kp LPAR       &kp RPAR          &none
 &none           &bt BT_CLR_ALL  &bt BT_CLR    &none        &none   &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none  &kp C_VOL_DN  &kp C_VOL_UP  &kp LBRC       &kp RBRC          &none
-&sys_reset      &out OUT_USB    &out OUT_BLE  &bootloader  &none   &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &none  &bootloader   &sys_reset    &kp LESS_THAN  &kp GREATER_THAN  &none
+&sys_reset      &out OUT_USB    &out OUT_BLE  &bootloader  &none   &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &none  &bootloader   &none         &kp LESS_THAN  &kp GREATER_THAN  &sys_reset
                                               &none        &trans  &none                                                                  &none  &trans        &none
             >;
 
