@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-option$$
-  - SYMBOL
+  - '&td_lower_fn'
   - LGUI
   - $$mdi:keyboard-space$$
-  - NUMBER
+  - '&td_raise_fn'
   - $$mdi:keyboard-esc$$
   QWERTY:
   - $$mdi:keyboard-tab$$
@@ -93,10 +93,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
-  - SYMBOL
+  - '&td_lower_fn'
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
-  - NUMBER
+  - '&td_raise_fn'
   - $$mdi:keyboard-esc$$
   SYMBOL:
   - '~'
@@ -142,7 +142,7 @@ layers:
   - END
   - PLAY PAUSE
   - LGUI
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - '&last_ime'
   - FUNTION
@@ -194,7 +194,7 @@ layers:
   - FUNTION
   - LGUI
   - $$mdi:keyboard-space$$
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   FUNTION:
   - '&studio_unlock'
@@ -235,12 +235,12 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - <
   - '>'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
