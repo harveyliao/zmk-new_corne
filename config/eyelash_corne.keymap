@@ -36,6 +36,17 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        lst: layer_sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LayerStickyTap";
+            bindings = <&mo>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -95,10 +106,10 @@
         default_layer {
             display-name = "COLEMAK"; // layer 0
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F     &kp P  &kp G                            &kp UP                &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&mt LCTRL ESC  &kp A  &kp R  &kp S     &kp T  &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHIFT     &kp Z  &kp X  &kp C     &kp V  &kp B     &kp SPACE              &kp DOWN              &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ENTER
-                             &kp LALT  &mo 2  &kp LGUI                                               &kp SPACE  &mo 3  &kp ESC
+&kp TAB        &kp Q  &kp W  &kp F     &kp P         &kp G                            &kp UP                &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
+&mt LCTRL ESC  &kp A  &kp R  &kp S     &kp T         &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHIFT     &kp Z  &kp X  &kp C     &kp V         &kp B     &kp SPACE              &kp DOWN              &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ENTER
+                             &kp LALT  &lst 2 LCTRL  &kp LGUI                                               &kp SPACE  &mo 3  &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
