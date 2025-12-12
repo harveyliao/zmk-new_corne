@@ -15,19 +15,19 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - A
-  - R
-  - S
-  - T
+  - {t: A, h: LMETA}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - D
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - H
-  - N
-  - E
-  - I
-  - O
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: RMETA}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
