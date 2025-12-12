@@ -46,6 +46,15 @@
             tapping-term-ms = <100>;
             flavor = "balanced";
         };
+        hm: hm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <230>;  // try 200–260
+            quick-tap-ms = <175>;     // optional, helps fast repeats
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -106,10 +115,12 @@
             display-name = "COLEMAK"; // layer 0
             bindings = <
 &kp TAB        &kp Q       &kp W       &kp F         &kp P         &kp G                            &kp UP                &kp J      &kp L        &kp U         &kp Y       &kp SEMI    &kp BSPC
-&mt LCTRL ESC  &mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T   &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt RCTRL N  &mt RSHIFT E  &mt RALT I  &mt RGUI O  &kp SQT
+&hm LCTRL ESC  &hm LGUI A  &hm LALT R  &hm LSHIFT S  &hm LCTRL T   &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &hm RCTRL N  &hm RSHIFT E  &hm RALT I  &hm RGUI O  &kp SQT
 &kp LSHIFT     &kp Z       &kp X       &kp C         &kp V         &kp B     &kp SPACE              &kp DOWN              &kp K      &kp M        &kp COMMA     &kp DOT     &kp FSLH    &mt RSHIFT ENTER
                                        &kp F13       &lst 2 LCTRL  &kp LGUI                                               &kp SPACE  &mo 3        &kp ESC
             >;
+/* &mt LCTRL ESC  &mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T   &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt RCTRL N  &mt RSHIFT E  &mt RALT I  &mt RGUI O  &kp SQT */
+
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
