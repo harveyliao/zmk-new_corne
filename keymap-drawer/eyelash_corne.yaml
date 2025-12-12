@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - F13
+  - Ctl+F8
   - {t: '$$mdi:apple-keyboard-control$$', h: SYMBOL}
   - LGUI
   - $$mdi:keyboard-space$$
