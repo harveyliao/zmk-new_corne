@@ -140,6 +140,28 @@
                 <&macro_release>,
                 <&kp LGUI>;
         };
+
+        bf_restart: bf_restart {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp Z>,
+                <&macro_wait_time 500>,
+                <&kp Z>,
+                <&macro_wait_time 500>,
+                <&kp Z>,
+                <&macro_wait_time 10000>,
+                <&kp ESCAPE>,
+                <&macro_wait_time 500>,
+                <&kp SPACE>,
+                <&macro_wait_time 1000>,
+                <&kp SPACE>,
+                <&macro_wait_time 1000>,
+                <&kp SPACE>,
+                <&macro_wait_time 26000>;
+
+            label = "BF_RESTART";
+        };
     };
 
     keymap {
