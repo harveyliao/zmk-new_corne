@@ -220,10 +220,10 @@
         mod_layer {
             display-name = "FUNTION"; // layer 4
             bindings = <
-&studio_unlock  &none           &none         &none        &none   &tog 1                                &mmv MOVE_UP                     &none           &kp C_NEXT    &none         &kp LPAR       &kp RPAR          &none
-&none           &bt BT_CLR_ALL  &bt BT_CLR    &none        &none   &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP  &kp LBRC       &kp RBRC          &none
-&sys_reset      &out OUT_USB    &out OUT_BLE  &bootloader  &none   &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &none           &bootloader   &sys_reset    &kp LESS_THAN  &kp GREATER_THAN  &none
-                                              &none        &trans  &none                                                                  &none           &trans        &none
+&studio_unlock  &none           &none         &none        &none   &tog 1                                     &mmv MOVE_UP                     &none           &kp C_NEXT    &none         &kp LPAR       &kp RPAR          &none
+&none           &bt BT_CLR_ALL  &bt BT_CLR    &none        &none   &bf_restart                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP  &kp LBRC       &kp RBRC          &none
+&sys_reset      &out OUT_USB    &out OUT_BLE  &bootloader  &none   &none        &kp C_MUTE                    &mmv MOVE_DOWN                   &none           &bootloader   &sys_reset    &kp LESS_THAN  &kp GREATER_THAN  &none
+                                              &none        &trans  &none                                                                       &none           &trans        &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
