@@ -172,7 +172,7 @@
             bindings = <
 &kp TAB        &kp Q        &kp W        &kp F          &kp P         &kp G                            &kp UP                &kp J      &kp L         &kp U          &kp Y        &kp SEMI     &kp BSPC
 &mt LCTRL ESC  &hmL LGUI A  &hmL LALT R  &hmL LSHIFT S  &hmL LCTRL T  &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &hmR RCTRL N  &hmR RSHIFT E  &hmR RALT I  &hmR RGUI O  &kp SQT
-&kp LSHIFT     &kp Z        &kp X        &kp C          &kp V         &kp B     &kp SPACE              &kp DOWN              &kp K      &kp M         &kp COMMA      &kp DOT      &kp FSLH     &mt RSHIFT ENTER
+&kp LSHIFT     &kp Z        &kp X        &kp C          &kp V         &kp B     &kp SPACE              &kp DOWN              &kp K      &kp M         &kp COMMA      &kp DOT      &kp FSLH     &kp ENTER
                                          &kp LC(F8)     &lst 2 LCTRL  &kp LGUI                                               &kp SPACE  &mo 3         &kp ESC
             >;
 
@@ -220,10 +220,10 @@
         mod_layer {
             display-name = "FUNTION"; // layer 4
             bindings = <
-&studio_unlock  &none           &none         &none        &none   &tog 1                                     &mmv MOVE_UP                     &none           &kp C_NEXT    &none         &kp LPAR       &kp RPAR          &none
-&none           &bt BT_CLR_ALL  &bt BT_CLR    &none        &none   &bf_restart                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP  &kp LBRC       &kp RBRC          &none
-&sys_reset      &out OUT_USB    &out OUT_BLE  &bootloader  &none   &none        &kp C_MUTE                    &mmv MOVE_DOWN                   &none           &bootloader   &sys_reset    &kp LESS_THAN  &kp GREATER_THAN  &none
-                                              &none        &trans  &none                                                                       &none           &trans        &none
+&studio_unlock  &none           &none         &none            &none   &tog 1                                     &mmv MOVE_UP                     &none           &kp C_NEXT    &none         &kp LPAR       &kp RPAR          &none
+&none           &bt BT_CLR_ALL  &bt BT_CLR    &kp PRINTSCREEN  &none   &bf_restart                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP  &kp LBRC       &kp RBRC          &none
+&sys_reset      &out OUT_USB    &out OUT_BLE  &bootloader      &none   &none        &kp C_MUTE                    &mmv MOVE_DOWN                   &none           &bootloader   &sys_reset    &kp LESS_THAN  &kp GREATER_THAN  &none
+                                              &none            &trans  &none                                                                       &none           &trans        &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
