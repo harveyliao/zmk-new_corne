@@ -178,7 +178,7 @@
 
             /* &mt LCTRL ESC  &mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T   &kp D                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt RCTRL N  &mt RSHIFT E  &mt RALT I  &mt RGUI O  &kp SQT */
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         qwerty_layer {
@@ -190,7 +190,7 @@
                           &kp LALT  &mo 2  &kp SPACE                                               &kp SPACE  &mo 3  &kp ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         lower_layer {
